@@ -45,4 +45,3 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 **Samsur Hidayat** – Real Estate Data Analyst
 
 ---
-*Analisis ini didasarkan pada data Airbnb publik dan model pendapatan estimasi; hasil aktual dapat bervariasi.*
