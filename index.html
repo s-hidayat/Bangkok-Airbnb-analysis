@@ -191,7 +191,7 @@ window.Quarto = {
 <p>Sebelumnya, kita perlu mempersiapkan data dan melihat kolom secara keseluruhan.</p>
 <div id="8e6a9db0" class="cell" data-execution_count="1">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -608,7 +608,7 @@ dtype: int64</code></pre>
 </ol>
 <div id="fc484617" class="cell" data-execution_count="2">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Seleksi Kolom</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>cols_to_keep <span class="op">=</span> [</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'id'</span>, <span class="st">'neighbourhood_cleansed'</span>, <span class="st">'latitude'</span>, <span class="st">'longitude'</span>,</span>
@@ -787,7 +787,7 @@ Sisa data: 12,576</code></pre>
 <p>Untuk mengevaluasi Nilai Arsitektural, saya melakukan ekstraksi fitur fisik dari kolom amenities. Saya mengubah data teks menjadi variabel biner (Boolean) untuk fitur-fitur kunci seperti Kolam Renang, Ruang Kerja, Dapur, Gym, dan AC. Hal ini memungkinkan analisis statistik untuk melihat pengaruh fitur fisik tersebut terhadap harga sewa dan efisiensi pendapatan.</p>
 <div id="05ad9fbe" class="cell" data-execution_count="3">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># --- TAHAP 1: Ekstraksi Fitur (Memastikan Kolom Tersedia) ---</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Kita buat fungsi kecil untuk mendeteksi kata kunci di kolom amenities</span></span>
@@ -887,7 +887,7 @@ Sisa data: 12,576</code></pre>
 <p>Tahap akhir persiapan data adalah mengonversi metrik operasional menjadi metrik finansial. Saya mengimplementasikan Sanity Model untuk menghitung Estimasi Pendapatan Bulanan dan Pendapatan per Tamu. Metrik ini akan menjadi instrumen utama dalam mengevaluasi efisiensi investasi dan performa properti pada tahap analisis berikutnya.</p>
 <div id="95e4e9b0" class="cell" data-execution_count="4">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Menghitung Metrik Utama untuk Analisis Investasi</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Asumsi: Review Rate 50% (0.5) dan Average Length of Stay 3 malam</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df_final[<span class="st">'est_monthly_revenue'</span>] <span class="op">=</span> df_final[<span class="st">'price'</span>] <span class="op">*</span> (df_final[<span class="st">'reviews_per_month'</span>] <span class="op">/</span> <span class="fl">0.5</span>) <span class="op">*</span> <span class="dv">3</span></span>
@@ -952,14 +952,14 @@ Sisa data: 12,576</code></pre>
 <section id="bab-3-analisis-data-dan-eksplorasi-eda" class="level3">
 <h3 class="anchored" data-anchor-id="bab-3-analisis-data-dan-eksplorasi-eda">Bab 3: Analisis Data dan Eksplorasi (EDA)</h3>
 <p>Pada bab ini, saya melakukan eksplorasi data untuk menjawab strategi investasi “membeli properti yang tepat” melalui empat sudut pandang utama.</p>
-<p>Sebelum melangkah lebih jauh, perlu ditekankan bahwa metrik Estimated Monthly Revenue yang digunakan dalam analisis ini merupakan sebuah Indeks Potensi Pendapatan, bukan angka transaksi riil (gross income) dari setiap listing. Metrik ini dihitung menggunakan ‘Sanity Model’ berbasis jumlah review sebagai proksi aktivitas pemesanan. Meskipun memberikan gambaran performa pasar yang andal secara statistik, angka ini berfungsi untuk membandingkan performa antar-wilayah atau tipe aset, bukan sebagai laporan keuangan mutlak</p>
+<p>Sebelum melangkah lebih jauh, perlu ditekankan bahwa metrik Estimated Monthly Revenue yang digunakan dalam analisis ini merupakan sebuah Indeks Potensi Pendapatan, bukan angka transaksi riil (gross income) dari setiap listing. Metrik ini dihitung menggunakan ‘Sanity Model’ berbasis jumlah review sebagai proksi aktivitas pemesanan. Meskipun memberikan gambaran performa pasar yang andal secara statistik, angka ini berfungsi untuk membandingkan performa antar-wilayah atau tipe aset, bukan sebagai laporan keuangan mutlak.</p>
 </section>
 <section id="strategi-lokasi-pemetaan-titik-panas-hotspot" class="level3">
 <h3 class="anchored" data-anchor-id="strategi-lokasi-pemetaan-titik-panas-hotspot">3.1 Strategi Lokasi: Pemetaan Titik Panas (Hotspot)</h3>
 <p>Langkah pertama dalam memilih properti adalah menentukan lokasi dengan permintaan dan nilai sewa tertinggi. Saya menganalisis median pendapatan bulanan di berbagai distrik di Bangkok untuk menghindari bias dari properti mewah yang terisolasi.</p>
 <div id="8979cd23" class="cell" data-execution_count="5">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Bab 3.1: Analisis Strategi Lokasi ---</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1132,7 +1132,7 @@ Sisa data: 12,576</code></pre>
 <p>Setelah menentukan lokasi, langkah krusial berikutnya adalah memilih tipe aset. Analisis ini menggunakan Box Plot untuk membandingkan median pendapatan sekaligus melihat risiko melalui sebaran data (outlier).</p>
 <div id="3da088de" class="cell" data-execution_count="6">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3.2 Performa Properti: Potensi Pendapatan &amp; Stabilitas Berdasarkan Tipe</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Menghitung median dan standar deviasi untuk melihat potensi &amp; stabilitas</span></span>
@@ -1331,7 +1331,7 @@ Sisa data: 12,576</code></pre>
 <p>Sebagai investor, keputusan untuk menambah fasilitas fisik harus didasarkan pada potensi return. Analisis ini membandingkan median pendapatan properti berdasarkan keberadaan fitur arsitektural tertentu.</p>
 <div id="4e6ec1c5" class="cell" data-execution_count="7">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3.3 Nilai Arsitektural: Analisis Dampak Fitur Fisik</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> [<span class="st">'has_pool'</span>, <span class="st">'has_workspace'</span>, <span class="st">'has_kitchen'</span>, <span class="st">'has_gym'</span>, <span class="st">'has_ac'</span>]</span>
@@ -1449,7 +1449,7 @@ Sisa data: 12,576</code></pre>
 <p>Analisis terakhir berfokus pada efisiensi ruang dengan mengukur Revenue per Guest. Metrik ini sangat krusial bagi investor untuk menentukan apakah lebih menguntungkan memiliki unit besar dengan kapasitas tamu banyak, atau unit kecil yang lebih padat dan efisien</p>
 <div id="ad7d468f" class="cell" data-execution_count="8">
 <details class="code-fold">
-<summary>Code</summary>
+<summary>🔍 Show/Hide code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3.4 Optimalisasi Ruang: Hubungan Kapasitas Tamu dan Efisiensi Pendapatan</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
