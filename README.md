@@ -38,7 +38,7 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 
 
 
-> **[📊 Lihat Laporan Interaktif (HTML)](https://s-hidayat.github.io/portofolio-2/blob/main/analysis_bangkok_v_02.html)**
+> **[📊 Lihat Laporan Interaktif (HTML)](https://s-hidayat.github.io/Bangkok-Airbnb-analysis/)**
 
 
 ## Author
