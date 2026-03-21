@@ -36,6 +36,11 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 - Folium untuk peta panas interaktif
 - Jupyter Notebook / Quarto
 
+
+
+> **[📊 Lihat Laporan Interaktif (HTML)](https://s-hidayat.github.io/portofolio-2/blob/main/analysis_bangkok_v_02.html)**
+
+
 ## Author
 **Samsur Hidayat** – Real Estate Data Analyst
 
