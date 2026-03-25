@@ -8,7 +8,7 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 ## Dataset
 * **Sumber:** Inside Airbnb (Bangkok)
 * 28.806 listing dengan 79 fitur
-* Dibersihkan dan disaring menjadi 12.576 listing aktif dengan ulasan terbaru
+* Dibersihkan dan disaring menjadi 12.574 listing aktif dengan ulasan terbaru
 
 ## Metodologi
 1.  **Pembersihan Data:** Mem-parsing harga, kamar mandi, dan fasilitas; menangani nilai kosong; menghapus pencilan (IQR).
