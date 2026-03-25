@@ -3,7 +3,7 @@
 ## Executive Summary
 Analisis ini mengevaluasi performa **12.574** properti aktif di Bangkok untuk memetakan variabel arsitektural dan lokasi yang paling berpengaruh terhadap pendapatan. Temuan kunci menunjukkan bahwa aksesibilitas transportasi (jalur BTS/MRT) dan fungsionalitas interior (Dapur & Ruang Kerja) memberikan premi harga yang jauh lebih tinggi dibandingkan fasilitas gedung standar seperti kolam renang atau gym.
 
-Secara arsitektural, penelitian ini menemukan adanya **"Privacy Premium"** yang signifikan; unit dengan rasio maksimal 3 tamu per 1 kamar mandi mencatatkan efisiensi pendapatan tertinggi. Investor disarankan untuk beralih dari strategi "maksimalisasi kapasitas tempat tidur" menuju "optimalisasi rasio privasi dan fungsionalitas unit" guna mengamankan *yield* yang kompetitif di pasar menengah Bangkok (rentang harga **฿122 - ฿3.752**).
+Secara arsitektural, penelitian ini menemukan adanya **"Privacy Premium"** yang signifikan; unit dengan rasio maksimal 3 tamu per 1 kamar mandi mencatatkan efisiensi pendapatan tertinggi. Investor disarankan untuk beralih dari strategi "maksimalisasi kapasitas tempat tidur" menuju "optimalisasi rasio privasi dan fungsionalitas unit" guna mengamankan *yield* yang kompetitif di pasar menengah Bangkok.
 
 ## Tujuan
 Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling menguntungkan untuk investasi sewa jangka pendek di Bangkok melalui integrasi intelijen lokasi, atribut properti, dan estimasi pendapatan.
