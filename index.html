@@ -563,8 +563,7 @@ dtype: int64</code></pre>
 <li><p>Pembersihan Nilai Moneter Kolom price pada data mentah tersimpan sebagai teks dengan simbol mata uang (contoh: ฿1,500.00). Saya melakukan transformasi untuk menghapus karakter non-numerik dan mengubah tipenya menjadi float/integer agar dapat diproses secara matematis.</p></li>
 <li><p>Standardisasi Data Arsitektural</p>
 <ul>
-<li><p>Ekstraksi Kamar Mandi: Kolom bathrooms_text seringkali berisi teks seperti “1.5 baths” atau “1 shared bath”. Saya mengekstrak nilai numerik dari teks tersebut menjadi kolom baru bathrooms_count untuk mempermudah korelasi antara jumlah kamar mandi dan harga.</p></li>
-<li><p>Parsing Amenities: Kolom amenities yang berbentuk list teks akan dipecah menjadi variabel biner (0 atau 1) untuk fitur fisik kunci yang ingin saya soroti: Pool, Air Conditioning, Gym, dan Dedicated Workspace.</p></li>
+<li>Ekstraksi Kamar Mandi: Kolom bathrooms_text seringkali berisi teks seperti “1.5 baths” atau “1 shared bath”. Saya mengekstrak nilai numerik dari teks tersebut menjadi kolom baru bathrooms_count untuk mempermudah korelasi antara jumlah kamar mandi dan harga.</li>
 </ul></li>
 <li><p>Penanganan Data Kosong (Imputasi)</p>
 <ul>
