@@ -560,19 +560,22 @@ dtype: int64</code></pre>
 <h3 class="anchored" data-anchor-id="langkah-langkah-pembersihan-data">2.2 Langkah-Langkah Pembersihan Data</h3>
 <p>Proses pembersihan dilakukan untuk memastikan angka yang dihasilkan nantinya tidak bias atau menyesatkan.</p>
 <ol type="1">
-<li><p>Pembersihan Nilai Moneter Kolom price pada data mentah tersimpan sebagai teks dengan simbol mata uang (contoh: ฿1,500.00). Saya melakukan transformasi untuk menghapus karakter non-numerik dan mengubah tipenya menjadi float/integer agar dapat diproses secara matematis.</p></li>
-<li><p>Standardisasi Data Arsitektural Ekstraksi Kamar Mandi: Kolom bathrooms_text seringkali berisi teks seperti “1.5 baths” atau “1 shared bath”. Saya mengekstrak nilai numerik dari teks tersebut menjadi kolom baru bathrooms_count untuk mempermudah korelasi antara jumlah kamar mandi dan harga.</p></li>
+<li><p>Seleksi Fitur Relevan</p>
+<p>Langkah pertama adalah menyaring dataset dari 79 fitur mentah menjadi 15 kolom kunci yang mencakup aspek identitas, lokasi geospasial, atribut fisik arsitektural, dan metrik performa ulasan. Hal ini dilakukan untuk meningkatkan efisiensi komputasi dan menjaga fokus analisis pada variabel yang berpengaruh langsung terhadap pendapatan.</p></li>
+<li><p>Pembersihan Nilai Moneter</p>
+<p>Kolom price pada data mentah tersimpan sebagai teks dengan simbol mata uang (contoh: ฿1,500.00). Saya melakukan transformasi untuk menghapus karakter non-numerik dan mengubah tipenya menjadi float agar dapat diproses secara matematis dalam perhitungan pendapatan.</p></li>
+<li><p>Standardisasi Data Arsitektural (Ekstraksi Kamar Mandi)</p>
+<p>Kolom bathrooms_text seringkali berisi teks deskriptif seperti “1.5 baths” atau “1 shared bath”. Saya melakukan ekstraksi numerik dari teks tersebut menjadi kolom baru bathrooms_count untuk memungkinkan perhitungan korelasi statistik antara jumlah fasilitas sanitasi dan harga sewa.</p></li>
 <li><p>Penanganan Data Kosong (Imputasi)</p>
-<ul>
-<li><p>Untuk kolom reviews_per_month yang kosong, nilai diisi dengan 0, dengan asumsi bahwa listing tersebut belum pernah mendapatkan ulasan atau sedang tidak aktif.</p></li>
-<li><p>Baris yang tidak memiliki informasi penting (seperti neighbourhood atau price) dihapus untuk menjaga akurasi data.</p></li>
-</ul></li>
-<li><p>Filter Listing Aktif (The Sanity Filter) Untuk menjaga relevansi analisis dari sisi investor, saya membatasi data hanya pada listing yang memenuhi kriteria “properti hidup”:</p>
+<p>Untuk menjaga integritas baris data, nilai kosong (missing values) ditangani dengan asumsi minimal: kolom reviews_per_month diisi dengan 0 (asumsi listing baru/tidak aktif), sementara kolom bedrooms dan bathrooms_count diisi dengan 1 sebagai representasi standar unit terkecil.</p></li>
+<li><p>Filter Listing Aktif (The Sanity Filter)</p>
+<p>Untuk menjaga relevansi analisis dari sisi investor, saya membatasi data hanya pada listing yang memenuhi kriteria “properti hidup”:</p>
 <ul>
 <li><p>Memiliki minimal 1 ulasan dalam 12 bulan terakhir (number_of_reviews_ltm &gt; 0).</p></li>
-<li><p>Harga per malam lebih besar atau sama dengan 100.</p></li>
+<li><p>Harga per malam logis secara operasional, yakni lebih besar atau sama dengan ฿100.</p></li>
 </ul></li>
-<li><p>Penghapusan Outlier (Pencilan) Saya menghapus listing dengan harga yang ekstrem (terlalu murah atau terlalu mahal) yang tidak merepresentasikan harga pasar normal di Bangkok. Hal ini dilakukan menggunakan metode Interquartile Range (IQR) atau batas persentil untuk memastikan rata-rata pendapatan tidak terdistorsi.</p></li>
+<li><p>Penghapusan Outlier (Pencilan)</p>
+<p>Saya menghapus listing dengan harga ekstrem yang tidak merepresentasikan harga pasar normal di Bangkok (seperti unit ultra-mewah atau kesalahan input data). Hal ini dilakukan menggunakan metode Interquartile Range (IQR) dengan rentang harga akhir ฿122 - ฿3.752 untuk memastikan rata-rata pendapatan tidak terdistorsi oleh nilai pencilan.</p></li>
 </ol>
 <div id="fc484617" class="cell" data-execution_count="2">
 <details class="code-fold">
@@ -1459,7 +1462,7 @@ Sisa data: 12,574</code></pre>
 </section>
 <section id="optimalisasi-ruang-dan-efisiensi-pendapatan" class="level3">
 <h3 class="anchored" data-anchor-id="optimalisasi-ruang-dan-efisiensi-pendapatan">3.4 Optimalisasi Ruang dan Efisiensi Pendapatan</h3>
-<p>Analisis terakhir berfokus pada efisiensi ruang dengan mengukur Revenue per Guest. Metrik ini sangat krusial bagi investor untuk menentukan apakah lebih menguntungkan memiliki unit besar dengan kapasitas tamu banyak, atau unit kecil yang lebih padat dan efisien</p>
+<p>Analisis terakhir berfokus pada efisiensi ruang dengan mengukur Revenue per Guest. Metrik ini sangat krusial bagi investor untuk menentukan apakah lebih menguntungkan memiliki unit besar dengan kapasitas tamu banyak, atau unit kecil yang lebih padat dan efisien.</p>
 <div id="ad7d468f" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>🔍 Show/Hide code</summary>
