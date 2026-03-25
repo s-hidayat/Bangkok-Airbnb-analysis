@@ -7,37 +7,30 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 
 ## Dataset
 * **Sumber:** Inside Airbnb (Bangkok)
-* 28.806 listing dengan 79 fitur
-* Dibersihkan dan disaring menjadi 12.574 listing aktif dengan ulasan terbaru
+* 28.806 listing awal dengan 79 fitur.
+* Dibersihkan menjadi **12.574** listing aktif melalui filter ulasan terbaru dan validasi harga.
 
 ## Metodologi
-1.  **Pembersihan Data:** Mem-parsing harga, kamar mandi, dan fasilitas; menangani nilai kosong; menghapus pencilan (IQR).
-2.  **Rekayasa Fitur:** Membuat indikator biner untuk fasilitas kunci dan menghitung rasio tamu-per-kamar mandi.
-3.  **Estimasi Pendapatan:** Menggunakan "model kewajaran" (tingkat ulasan 50%, rata-rata menginap 3 malam) untuk memperkirakan pendapatan bulanan.
-4.  **Analisis Eksploratif:**
-    * Titik panas lokasi melalui peta panas.
-    * Kinerja tipe properti (box plot).
-    * Dampak fasilitas terhadap pendapatan.
-    * **Analisis privasi: Hubungan antara jumlah kamar mandi, rasio tamu, dan efisiensi pendapatan.**
+1. **Pembersihan Data:** Mem-parsing harga dan fasilitas; menetapkan batas harga minimal **฿100** untuk validitas operasional; menghapus outlier harga menggunakan metode IQR (**Rentang Akhir: ฿122 - ฿3.752**).
+2. **Rekayasa Fitur:** Membuat variabel biner untuk fasilitas kunci (AC, Dapur, Pool, Gym, Workspace) dan menghitung rasio tamu-per-kamar mandi.
+3. **Estimasi Pendapatan:** Menggunakan "model kewajaran" (tingkat ulasan 50%, rata-rata menginap 3 malam) untuk estimasi bulanan.
+4. **Analisis Eksploratif:** Peta panas lokasi, box plot tipe properti, dan analisis korelasi privasi (kamar mandi).
 
 ## Temuan Utama
-* **Lokasi:** Konsentrasi pendapatan tinggi mengikuti jalur BTS/MRT, bukan batas administratif distrik.
-* **Tipe Properti:** Seluruh rumah/townhouse menghasilkan pendapatan tertinggi; kamar privat berkinerja rendah.
-* **Nilai Arsitektural:** Dapur (+37%) dan ruang kerja (+26%) memberikan premi harga tertinggi.
-* **Efisiensi Ruang:** Pendapatan per tamu optimal pada kapasitas 5 dan 9 tamu.
-* **Keseimbangan Privasi:** Penambahan kamar mandi ke-2 adalah *price driver* krusial untuk segmen grup. Pendapatan menurun drastis saat rasio melebihi 3 tamu per 1 kamar mandi.
+* **Lokasi:** Konsentrasi pendapatan tinggi mengikuti jalur BTS/MRT, melintasi batas administratif distrik.
+* **Tipe Properti:** Seluruh rumah/townhouse menghasilkan pendapatan tertinggi dibandingkan kamar privat.
+* **Nilai Arsitektural:** Dapur dan ruang kerja memberikan premi harga tertinggi; sementara AC (86%) telah menjadi fasilitas standar pasar.
+* **Keseimbangan Privasi:** Penambahan kamar mandi kedua adalah *price driver* krusial. Pendapatan menurun signifikan saat rasio melebihi 3 tamu per 1 kamar mandi.
 
 ## Rekomendasi
-* **Fokus Fasilitas:** Prioritaskan unit dengan dapur lengkap dan ruang kerja khusus.
-* **Strategi Arsitektural:** Targetkan properti dengan **rasio minimal 1 kamar mandi untuk setiap 3 tamu**.
-* **Investasi Aset:** Untuk target pasar keluarga/grup (kapasitas >4), prioritaskan unit dengan minimal 2 kamar mandi guna menjaga daya tawar harga premium.
+* **Target Investasi:** Prioritaskan unit dengan dapur lengkap dan rasio minimal **1 kamar mandi untuk setiap 3 tamu**.
+* **Strategi Aset:** Untuk kapasitas >4 tamu, pastikan tersedia minimal 2 kamar mandi guna menjaga harga sewa premium.
 * **Lokasi:** Fokus pada area dalam radius jalan kaki dari stasiun transportasi utama.
 
 ## Tools & Libraries
 * Python (pandas, numpy, matplotlib, seaborn)
-* Folium untuk peta panas interaktif
+* Folium (Geospatial mapping)
 * Jupyter Notebook / Quarto
-
 
 
 > **[📊 Lihat Laporan Interaktif Lengkap (HTML)](https://s-hidayat.github.io/Bangkok-Airbnb-analysis/)**
