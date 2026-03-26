@@ -5,6 +5,9 @@ Analisis ini mengevaluasi performa **12.574** properti aktif di Bangkok untuk me
 
 Secara arsitektural, penelitian ini menemukan adanya **"Privacy Premium"** yang signifikan; unit dengan rasio maksimal 3 tamu per 1 kamar mandi mencatatkan efisiensi pendapatan tertinggi. Investor disarankan untuk beralih dari strategi "maksimalisasi kapasitas tempat tidur" menuju "optimalisasi rasio privasi dan fungsionalitas unit" guna mengamankan *yield* yang kompetitif di pasar menengah Bangkok.
 
+> **[📊 Lihat Laporan Interaktif Lengkap (HTML)](https://s-hidayat.github.io/Bangkok-Airbnb-analysis/)**
+
+
 ## Tujuan
 Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling menguntungkan untuk investasi sewa jangka pendek di Bangkok melalui integrasi intelijen lokasi, atribut properti, dan estimasi pendapatan.
 
@@ -35,8 +38,6 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 * Folium (Geospatial mapping)
 * Jupyter Notebook / Quarto
 
-
-> **[📊 Lihat Laporan Interaktif Lengkap (HTML)](https://s-hidayat.github.io/Bangkok-Airbnb-analysis/)**
 
 
 ## Author
