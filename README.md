@@ -42,8 +42,6 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 * Jupyter Notebook / Quarto
 
 
-> **[📊 Lihat Laporan Interaktif Lengkap (HTML)](https://s-hidayat.github.io/Bangkok-Airbnb-analysis/)**
-
 
 ## Author
 **Samsur Hidayat** – Real Estate Data Analyst
