@@ -1,4 +1,4 @@
-## Blueprint Investasi: Mengoptimalkan Profit melalui Fitur Arsitektural pada Pasar Airbnb Bangkok"
+## Blueprint Investasi: Mengoptimalkan Profit melalui Fitur Arsitektural pada Pasar Airbnb Bangkok
 
 ## Executive Summary
 Analisis ini mengevaluasi performa **12.574** properti aktif di Bangkok untuk memetakan variabel arsitektural dan lokasi yang paling berpengaruh terhadap pendapatan. Temuan kunci menunjukkan bahwa aksesibilitas transportasi (jalur BTS/MRT) dan fungsionalitas interior (Dapur & Ruang Kerja) memberikan premi harga yang jauh lebih tinggi dibandingkan fasilitas gedung standar seperti kolam renang atau gym.
