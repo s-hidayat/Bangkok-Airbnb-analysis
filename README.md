@@ -1,15 +1,11 @@
-## Blueprint Investasi: Mengoptimalkan Profit melalui Fitur Arsitektural pada Pasar Airbnb Bangkok
+## Blueprint Investasi: Mengoptimalkan Profit melalui Fitur Arsitektural pada Pasar Airbnb Bangkok"
 
 ## Executive Summary
 Analisis ini mengevaluasi performa **12.574** properti aktif di Bangkok untuk memetakan variabel arsitektural dan lokasi yang paling berpengaruh terhadap pendapatan. Temuan kunci menunjukkan bahwa aksesibilitas transportasi (jalur BTS/MRT) dan fungsionalitas interior (Dapur & Ruang Kerja) memberikan premi harga yang jauh lebih tinggi dibandingkan fasilitas gedung standar seperti kolam renang atau gym.
 
 Secara arsitektural, penelitian ini menemukan adanya **"Privacy Premium"** yang signifikan; unit dengan rasio maksimal 3 tamu per 1 kamar mandi mencatatkan efisiensi pendapatan tertinggi. Investor disarankan untuk beralih dari strategi "maksimalisasi kapasitas tempat tidur" menuju "optimalisasi rasio privasi dan fungsionalitas unit" guna mengamankan *yield* yang kompetitif di pasar menengah Bangkok.
-<<<<<<< HEAD
-=======
 
 > **[📊 Lihat Laporan Interaktif Lengkap (HTML)](https://s-hidayat.github.io/Bangkok-Airbnb-analysis/)**
-
->>>>>>> 9403c65d2aedd3249ee16f4033390e9c7e806a92
 
 ## Tujuan
 Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling menguntungkan untuk investasi sewa jangka pendek di Bangkok melalui integrasi intelijen lokasi, atribut properti, dan estimasi pendapatan.
@@ -41,9 +37,3 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 * Folium (Geospatial mapping)
 * Jupyter Notebook / Quarto
 
-
-
-## Author
-**Samsur Hidayat** – Real Estate Data Analyst
-
----
