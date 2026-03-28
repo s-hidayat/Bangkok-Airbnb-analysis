@@ -25,12 +25,12 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 * **Lokasi:** Konsentrasi pendapatan tinggi mengikuti jalur BTS/MRT, melintasi batas administratif distrik.
 * **Tipe Properti:** Seluruh rumah/townhouse menghasilkan pendapatan tertinggi dibandingkan kamar privat.
 * **Nilai Arsitektural:** Dapur dan ruang kerja memberikan premi harga tertinggi; sementara AC (86%) telah menjadi fasilitas standar pasar.
-* **Optimalisasi Ruang:** Kapasitas **9 tamu** mencatatkan efisiensi pendapatan per kepala tertinggi (฿3.180), disusul oleh kapasitas **5 tamu** (฿3.060) sebagai titik keseimbangan terbaik antara profit dan stabilitas.
+* **Optimalisasi Ruang:** Kapasitas **9 tamu** mencatatkan efisiensi pendapatan per kepala tertinggi (฿3.180), disusul oleh kapasitas **5 tamu** (฿3.060) sebagai titik keseimbangan terbaik antara profit dan stabilitas
 * **Keseimbangan Privasi:** Penambahan kamar mandi kedua adalah *price driver* krusial. Pendapatan menurun signifikan saat rasio melebihi 3 tamu per 1 kamar mandi.
 
 ## Rekomendasi
 * **Target Investasi:** Prioritaskan unit dengan dapur lengkap dan rasio minimal **1 kamar mandi untuk setiap 3 tamu**.
-* **Strategi Aset:** Untuk kapasitas >4 tamu, pastikan tersedia minimal 2 kamar mandi guna menjaga harga sewa premium.
+* **Strategi Aset:** Gunakan konfigurasi ruang yang fleksibel (seperti sofa bed) untuk mencapai kapasitas 5 atau 9 tamu, karena data menunjukkan kedua titik ini memberikan imbal hasil per kepala paling optimal di pasar Bangkok
 * **Lokasi:** Fokus pada area dalam radius jalan kaki dari stasiun transportasi utama.
 
 ## Tools & Libraries
