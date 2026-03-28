@@ -25,6 +25,7 @@ Mengidentifikasi tipe properti, lokasi, dan fitur arsitektural yang paling mengu
 * **Lokasi:** Konsentrasi pendapatan tinggi mengikuti jalur BTS/MRT, melintasi batas administratif distrik.
 * **Tipe Properti:** Seluruh rumah/townhouse menghasilkan pendapatan tertinggi dibandingkan kamar privat.
 * **Nilai Arsitektural:** Dapur dan ruang kerja memberikan premi harga tertinggi; sementara AC (86%) telah menjadi fasilitas standar pasar.
+* **Optimalisasi Ruang:** Kapasitas **9 tamu** mencatatkan efisiensi pendapatan per kepala tertinggi (฿3.180), disusul oleh kapasitas **5 tamu** (฿3.060) sebagai titik keseimbangan terbaik antara profit dan stabilitas.
 * **Keseimbangan Privasi:** Penambahan kamar mandi kedua adalah *price driver* krusial. Pendapatan menurun signifikan saat rasio melebihi 3 tamu per 1 kamar mandi.
 
 ## Rekomendasi
